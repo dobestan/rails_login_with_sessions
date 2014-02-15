@@ -1,0 +1,10 @@
+<h1>Profile</h1>
+<% if signed_in? %>
+    <ul>
+        <li>ID : <%= @user.id %></li>
+        <li>NAME : <%= @user.name %></li>
+        <li>EMAIL : <%= @user.email %></li><br />
+        <li>PASSWORD_DIGEST : <%= @user.password_digest %></li>
+        <li>REMEMBER_TOKEN : <%= @user.remember_token %></li>
+    </ul>
+<% end %>
